@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cofluent:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cofluent="http://cofluent.intel.com/cofluent/1.0.0" xmi:id="_8Ro-0H0fEeyHibHuasd8cA" name="LibraryExampleApp" version="8.1.1_r1_nolic_161" target="" includeInheritedHeader="" inheritanceClass="" callToInheritedConstructors="" cyclePeriod="10 ns" affinity="" priority="0" schedulingPolicy="FIFO" InterfaceBlockingBehavior="RELEASE_CORE" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" coSimulationType="NONE_COSIM">
+  <annotations xmi:id="_8W-x0H0fEeyHibHuasd8cA" source="cdt.configurations">
+    <details xmi:id="_8W-x0X0fEeyHibHuasd8cA" key="cofluent.managedbuild.config.gnu.mingw.exe.release.1046321642" value="cdt.configuration.active"/>
+  </annotations>
+  <refinement xsi:type="cofluent:Structure" xmi:id="_8RqM8H0fEeyHibHuasd8cA" name="LibraryExampleAppSt">
+    <models xsi:type="cofluent:Function" xmi:id="_-1mJUH0fEeyHibHuasd8cA" name="Producer" includes="#include &quot;add.h&quot;&#xD;&#xA;" cyclePeriod=" ns" affinity="" priority="0" schedulingPolicy="FIFO" InterfaceBlockingBehavior="RELEASE_CORE" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" coSimulationType="NONE_COSIM">
+      <ports xmi:id="_BhLl0H0gEeyHibHuasd8cA" name="MsgQ" type="MESSAGE_QUEUE" direction="OUT" outputActions="_-15ERH0fEeyHibHuasd8cA" relations="_AVmjgH0gEeyHibHuasd8cA" size="" synchronizeName="true" vector="false" requestPipelineDepth="1">
+        <constructorArguments></constructorArguments>
+        <templateArguments></templateArguments>
+      </ports>
+      <refinement xsi:type="cofluent:Behavior" xmi:id="_-15EQH0fEeyHibHuasd8cA" name="ProducerBh" firstStatement="_-15EQX0fEeyHibHuasd8cA">
+        <statements xsi:type="cofluent:Operation" xmi:id="_-15EQX0fEeyHibHuasd8cA" name="init" isFirstOf="_-15EQH0fEeyHibHuasd8cA" next="_-15EQn0fEeyHibHuasd8cA" executionTime="10 ns" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" dynamicResourceLoad=""/>
+        <statements xsi:type="cofluent:LoopStatement" xmi:id="_-15EQn0fEeyHibHuasd8cA" name="Loop" firstStatement="_-15EQ30fEeyHibHuasd8cA" lastStatement="_-15ERH0fEeyHibHuasd8cA" previous="_-15EQX0fEeyHibHuasd8cA" condition=""/>
+        <statements xsi:type="cofluent:Operation" xmi:id="_-15EQ30fEeyHibHuasd8cA" name="produce" isFirstOf="_-15EQn0fEeyHibHuasd8cA" next="_-15ERH0fEeyHibHuasd8cA" algorithm="int a = 1;&#xD;&#xA;int b = 2;&#xD;&#xA;int c = add(a, b);&#xD;&#xA;" executionTime="10 ns" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" dynamicResourceLoad=""/>
+        <statements xsi:type="cofluent:OutputAction" xmi:id="_-15ERH0fEeyHibHuasd8cA" name="OutAction" isLastOf="_-15EQn0fEeyHibHuasd8cA" previous="_-15EQ30fEeyHibHuasd8cA" port="_BhLl0H0gEeyHibHuasd8cA" duration=" ns" condition="" priority="" vectorSize="" blocking="true" call=""/>
+      </refinement>
+    </models>
+    <models xsi:type="cofluent:Function" xmi:id="__gLXYH0fEeyHibHuasd8cA" name="Consumer" includes="#include &quot;add.h&quot;&#xD;&#xA;" cyclePeriod=" ns" affinity="" priority="0" schedulingPolicy="FIFO" InterfaceBlockingBehavior="RELEASE_CORE" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" coSimulationType="NONE_COSIM">
+      <ports xmi:id="_CDQYIH0gEeyHibHuasd8cA" name="MsgQ" type="MESSAGE_QUEUE" direction="IN" inputActions="__gReBH0fEeyHibHuasd8cA" relations="_AVmjgH0gEeyHibHuasd8cA" size="" synchronizeName="true" vector="false" requestPipelineDepth="1">
+        <constructorArguments></constructorArguments>
+        <templateArguments></templateArguments>
+      </ports>
+      <refinement xsi:type="cofluent:Behavior" xmi:id="__gReAH0fEeyHibHuasd8cA" name="ConsumerBh" firstStatement="__gReAX0fEeyHibHuasd8cA">
+        <statements xsi:type="cofluent:Operation" xmi:id="__gReAX0fEeyHibHuasd8cA" name="init" isFirstOf="__gReAH0fEeyHibHuasd8cA" next="__gReAn0fEeyHibHuasd8cA" executionTime="10 ns" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" dynamicResourceLoad=""/>
+        <statements xsi:type="cofluent:LoopStatement" xmi:id="__gReAn0fEeyHibHuasd8cA" name="Loop" firstStatement="__gReBH0fEeyHibHuasd8cA" lastStatement="__gReA30fEeyHibHuasd8cA" previous="__gReAX0fEeyHibHuasd8cA" condition=""/>
+        <statements xsi:type="cofluent:Operation" xmi:id="__gReA30fEeyHibHuasd8cA" name="consume" isLastOf="__gReAn0fEeyHibHuasd8cA" previous="__gReBH0fEeyHibHuasd8cA" algorithm="int a = 1;&#xD;&#xA;int b = 2;&#xD;&#xA;int c = add(a, b);&#xD;&#xA;" executionTime="10 ns" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" dynamicResourceLoad=""/>
+        <statements xsi:type="cofluent:InputAction" xmi:id="__gReBH0fEeyHibHuasd8cA" name="InAction" isFirstOf="__gReAn0fEeyHibHuasd8cA" next="__gReA30fEeyHibHuasd8cA" port="_CDQYIH0gEeyHibHuasd8cA" timeout=" ns" priority="" duration=" ns" vectorSize="" blocking="true" condition=""/>
+      </refinement>
+    </models>
+    <relations xsi:type="cofluent:MessageQueue" xmi:id="_AVmjgH0gEeyHibHuasd8cA" name="MsgQ" ports="_BhLl0H0gEeyHibHuasd8cA _CDQYIH0gEeyHibHuasd8cA" capacity="1" concurrency="1" concurrencyManagement="FULL" sendTime="1 ns" receiveTime="1 ns" sendThreshold="1" receiveThreshold="1" address="" mask="" messageQueueType="STANDARD" cosimChiselDataPortBits="">
+      <relationType xsi:type="cofluent:RelationPredefinedType" xmi:id="_AVo_wH0gEeyHibHuasd8cA"/>
+    </relations>
+  </refinement>
+</cofluent:Application>

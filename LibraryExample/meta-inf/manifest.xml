@@ -1,0 +1,23 @@
+<project cofluent="8.1.1">
+	<ip path="/LibraryExampleApp/Consumer">
+		<version>1.0.0</version>
+		<description>consumer</description>
+		<folder>external</folder>
+	</ip>
+	<ip path="/LibraryExampleApp/Function">
+		<version>1.0.0</version>
+		<description>function</description>
+		<category>Other</category>
+	</ip>
+	<ip path="/LibraryExampleApp/Producer">
+		<version>1.0.0</version>
+		<description>producer</description>
+	</ip>
+	<granularity time="Functional" data="Data size" processing="Real algorithm"/>
+	<compiler name="RHEL 5 GCC 4.1.2"/>
+	<compiler name="SuSE SLES 11.2 GCC 4.9.3"/>
+	<compiler name="Visual C++ 2015"/>
+	<compiler name="Visual C++ 2019"/>
+	<compiler name="Windows Clang"/>
+	<compiler name="Windows MinGW 9.2.0"/>
+</project>
