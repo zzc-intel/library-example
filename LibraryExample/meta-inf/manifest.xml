@@ -3,16 +3,17 @@
 		<version>1.0.0</version>
 		<description>consumer</description>
 		<category>New Category</category>
+		<folder>external</folder>
 	</ip>
 	<ip path="/LibraryExampleApp/Function">
 		<version>1.0.0</version>
 		<description>function</description>
-		<folder>external</folder>
 	</ip>
 	<ip path="/LibraryExampleApp/Producer">
 		<version>1.0.0</version>
 		<description>producer</description>
 		<category>New Category</category>
+		<folder>external</folder>
 	</ip>
 	<granularity time="Functional" data="Data size" processing="Real algorithm"/>
 	<compiler name="Windows MinGW 9.2.0"/>
